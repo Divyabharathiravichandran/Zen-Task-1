@@ -1,0 +1,104 @@
+Exploring the Differences Between HTTP1.1 and HTTP2
+
+When it comes to web technology, protocols are crucial in deciding how information moves between clients and servers.
+HTTP1.1 and HTTP2 are two of the most important protocols that have shaped the working of websites as well as web applications.
+Let’s get into their differences and see how each has affected the web experience.
+
+HTTP1.1 
+
+Since it was standardized in 1999, HTTP1.1 has been the dominant protocol governing internet communication.
+At first it was designed for the simpler internet times, which uses a simple request-response model where each resource 
+(like images, scripts, stylesheets) requires a separate connection. These are some features of HTTP1.1.
+
+Multiple Connections: To request a resource on average calls for establishment of fresh connections which may 
+lead to inefficiencies and increased latency more so in high-delay networks.
+
+Header Redundancy: Headers are sent together with every request and response even if they haven’t changed between requests; 
+this might result into more overhead especially when dealing with small resources.
+
+Blocking Nature: This means that resources are fetched sequentially using an blocking protocol called HTTP1.1
+If one resource is slow to load, it can delay the loading of subse
+
+No Server Push: The server cannot initiate sending resources to the client unless explicitly requested,
+which can delay the rendering of the page.
+
+HTTP1.1 worked very well for web developers throughout many years, but modern web application needs were looking 
+for a more efficient protocol.
+
+HTTP2
+
+HTTP2 was released in 2015 as an attempt to fix the flaws in HTTP1.0 and improve overall performance of the web.
+These include several key features:
+
+Multiplexing: HTTP/2 allows multiplexing of multiple requests and responses over a single TCP connection thereby avoiding 
+multiple connections per origin and reducing latency by allowing concurrent delivery of resources.
+
+Header Compression: Overhead is reduced in HTTP2 because it uses header compression. For each request or response, 
+headers are encoded using a binary format hence much less data is transmitted.
+
+Server Push: In contrast with HTTP1.1, HTTP2 has server push support as one feature that enables servers to send 
+some information to clients before being asked for them; this minimizes round-trip latency and enhances quickness in loading pages.
+
+Stream Prioritization: Clients can now specify individual resources priority using HTTP2 so that important components
+such as CSS required for display purposes would be given more preference than trivial ones.
+
+Read about IP address, port, HTTP methods, MAC address
+
+IP Address
+
+An IP is stands for (Internet Protocol) address is a unique number assigned to every computer device that is connected 
+to the internet network. The major tasks of an IP address include identification and location addressing.
+
+Identification is like a postal address identifies the geographical region in the physical world,
+they recognize uniquely a device on a network.
+
+Location Addressing will specify where packets originate from and where they go to so that data can be sent 
+and transmitted over networks by devices.
+
+Generally, IP addresses are divided into two main types:
+
+IPv4 and IPv6
+
+Port
+
+Ports allow transport layer protocols such as TCP and UDP to identify different services running on one machine. 
+Every port has association with one or another service or process in computer. Important points concerning ports are:
+
+Range : Numbered between 0 and 65535,
+
+Well-known Ports : The ports numbered between 0–1023 are reserved for specific services 
+
+Dynamic or Private Ports : This range includes ports from 49152-65535 which are reserved for dynamic or private use.
+
+HTTP Methods
+
+HTTP stands for (Hypertext Transfer Protocol), this methods are verbs used to indicate the desired action to be performed
+ on a resource identified by a URL. Common HTTP methods include:
+
+GET: Requests data from a specified resource.
+
+POST: Submits data to be processed to a specified resource.
+
+PUT: Updates a resource or creates a new resource.
+
+DELETE: Deletes the specified resource.
+
+PATCH: Applies partial modifications to a resource.
+
+HEAD: Requests headers identical to those of a GET request, but without the response body.
+
+These methods define the operations that can be performed on web resources and are essential in building RESTful APIs 
+and web applications.
+
+MAC Address
+
+A MAC stands for (Media Access Control), this address is a unique identifier assigned to a network interface controller (NIC) 
+for communications at the data link layer of a network segment. Key aspects of MAC addresses include:
+
+Format: MAC addresses are typically represented as six groups of two hexadecimal digits (e.g., 00:1A:2B:3C:4D:5E).
+
+Uniqueness: Each MAC address is globally unique, ensuring no two devices on the same network have the same address.
+
+Usage: MAC addresses are used for local network communication and are not routable across the internet.
+
+
